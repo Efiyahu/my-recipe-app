@@ -1,0 +1,30 @@
+.toolbar {
+  @media (max-width: 600px) {
+    flex-direction: column;
+    height: 150px;
+    padding-bottom: 10px;
+    @media (max-width: 900px) {
+      height: 80px;
+      flex-direction: row;
+    }
+
+    .title {
+      margin-top: 5px;
+    }
+    .form {
+      @media (max-width: 600px) {
+        font-size: smaller;
+      }
+
+      @media (max-width: 900px) {
+        width: 100%;
+      }
+    }
+  }
+
+  .links {
+    @media (max-width: 900px) {
+      display: flex;
+    }
+  }
+}
